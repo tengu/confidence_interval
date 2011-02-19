@@ -1,0 +1,22 @@
+
+* C lib and swig binding for "Lower bound of Wilson score confidence interval"
+
+  * as described by http://www.evanmiller.org/how-not-to-sort-by-average-rating.html
+
+    To rank items with positive/negative ratings (Bernoulli trials), 
+    use Lower bound of "binomial confidence interval" such as "Wilson Score Interval".
+
+  * implementation suggested in: http://stackoverflow.com/questions/1687497/objective-c-implementation-of-the-wilson-score-interval
+
+* building
+  make clean all test
+
+* perl api
+  confidence_interval::wilson_lower_bound(2*$i, 10*$i, 0.1);
+  see test.pl
+
+* references
+  http://stackoverflow.com/questions/1687497/objective-c-implementation-of-the-wilson-score-interval
+  http://www.evanmiller.org/how-not-to-sort-by-average-rating.html
+  http://blog.linkibol.com/2010/05/07/how-to-build-a-popularity-algorithm-you-can-be-proud-of/
+  http://www.reddit.com/r/programming/comments/7ww4d/how_not_to_sort_by_average_rating/
